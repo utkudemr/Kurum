@@ -1,0 +1,88 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kurum.Dal", "Kurum.Dal\Kurum.Dal.csproj", "{8CFB0DCB-EACE-4173-9D8A-2F2053B49195}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kurum.Bll", "Kurum.Bll\Kurum.Bll.csproj", "{18FC826E-E6D2-4286-9680-8C78ECB915A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kurum.WcfLibrary", "Kurum.WcfLibrary\Kurum.WcfLibrary.csproj", "{303160B7-A640-4A32-8D31-1ADA9AD56569}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Kurum.WcfIISHost", "Kurum.WcfIISHost\Kurum.WcfIISHost\", "{B8F91760-CA93-4815-8BB7-662E899F6773}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		ProjectReferences = "{303160b7-a640-4a32-8d31-1ada9ad56569}|Kurum.WcfLibrary.dll;{18FC826E-E6D2-4286-9680-8C78ECB915A0}|Kurum.Bll.dll;{8CFB0DCB-EACE-4173-9D8A-2F2053B49195}|Kurum.Dal.dll;{B69CD662-2FDB-47BB-B509-3180B6E4A01B}|Kurum.Entities.dll;{042721B4-3C0A-40A5-A447-49DF88E391FA}|Kurum.Interfaces.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_51927"
+		Debug.AspNetCompiler.PhysicalPath = "Kurum.WcfIISHost\Kurum.WcfIISHost\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51927\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_51927"
+		Release.AspNetCompiler.PhysicalPath = "Kurum.WcfIISHost\Kurum.WcfIISHost\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51927\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "51927"
+		SlnRelativePath = "Kurum.WcfIISHost\Kurum.WcfIISHost\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kurum.Entities", "Kurum.Entities\Kurum.Entities.csproj", "{B69CD662-2FDB-47BB-B509-3180B6E4A01B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kurum.MvcWebUI", "Kurum.MvcWebUI\Kurum.MvcWebUI.csproj", "{16971878-E023-41C0-8BB7-405A68AC4547}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kurum.MvcWebUI.Tests", "Kurum.MvcWebUI.Tests\Kurum.MvcWebUI.Tests.csproj", "{EE747303-9916-4EF7-B302-857988236D9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kurum.Interfaces", "Kurum.Interfaces\Kurum.Interfaces.csproj", "{042721B4-3C0A-40A5-A447-49DF88E391FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CFB0DCB-EACE-4173-9D8A-2F2053B49195}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CFB0DCB-EACE-4173-9D8A-2F2053B49195}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CFB0DCB-EACE-4173-9D8A-2F2053B49195}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CFB0DCB-EACE-4173-9D8A-2F2053B49195}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18FC826E-E6D2-4286-9680-8C78ECB915A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18FC826E-E6D2-4286-9680-8C78ECB915A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18FC826E-E6D2-4286-9680-8C78ECB915A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18FC826E-E6D2-4286-9680-8C78ECB915A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{303160B7-A640-4A32-8D31-1ADA9AD56569}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{303160B7-A640-4A32-8D31-1ADA9AD56569}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{303160B7-A640-4A32-8D31-1ADA9AD56569}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{303160B7-A640-4A32-8D31-1ADA9AD56569}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8F91760-CA93-4815-8BB7-662E899F6773}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8F91760-CA93-4815-8BB7-662E899F6773}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8F91760-CA93-4815-8BB7-662E899F6773}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8F91760-CA93-4815-8BB7-662E899F6773}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{B69CD662-2FDB-47BB-B509-3180B6E4A01B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B69CD662-2FDB-47BB-B509-3180B6E4A01B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B69CD662-2FDB-47BB-B509-3180B6E4A01B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B69CD662-2FDB-47BB-B509-3180B6E4A01B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16971878-E023-41C0-8BB7-405A68AC4547}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16971878-E023-41C0-8BB7-405A68AC4547}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16971878-E023-41C0-8BB7-405A68AC4547}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16971878-E023-41C0-8BB7-405A68AC4547}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE747303-9916-4EF7-B302-857988236D9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE747303-9916-4EF7-B302-857988236D9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE747303-9916-4EF7-B302-857988236D9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE747303-9916-4EF7-B302-857988236D9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{042721B4-3C0A-40A5-A447-49DF88E391FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{042721B4-3C0A-40A5-A447-49DF88E391FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{042721B4-3C0A-40A5-A447-49DF88E391FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{042721B4-3C0A-40A5-A447-49DF88E391FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {459612F0-FA65-4ADA-A242-BC28E0CB5CC0}
+	EndGlobalSection
+EndGlobal

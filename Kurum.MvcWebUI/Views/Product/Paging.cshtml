@@ -1,0 +1,14 @@
+﻿@model List<Kurum.Entities.Product>
+@{
+    ViewBag.Title = "Paging";
+}
+
+@foreach (var item in Model)
+{<p>
+        @item.ProductName
+        @item.UnitPrice
+
+        @item.CategoryId
+    </p>
+}
+

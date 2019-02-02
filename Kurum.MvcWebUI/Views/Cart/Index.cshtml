@@ -1,0 +1,37 @@
+﻿@model Kurum.Entities.Cart
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Ürün Listesi</h2>
+
+<table class="table">
+    <tr class="table-bordered">
+        <th>Product Name</th>
+        <th>Unit Price</th>
+        <th>Quantity</th>
+        <th>Total Cost</th>
+        <th>Sepetten Çıkar</th>
+    </tr>
+    @foreach (var line in Model.Lines)
+    {
+        <tr>
+            <td>@line.Product.ProductName</td>
+            <td>@line.Product.UnitPrice</td>
+            <td>@line.Quantity</td>
+            <!--ToStrin("c") current para birimi sembolünü getirir.-->
+            <td>@((line.Quantity * @line.Product.UnitPrice).ToString("c"))</td>
+            <td>
+                @using (Html.BeginForm("RemoveFromCard", "Cart"))
+                {
+                    @Html.Hidden("productId", line.Product.ProductID)
+                    <input  type="submit" value="Remove from Cart"/>
+                }
+
+            </td>
+        </tr>
+    }
+</table>
+<p align="center">
+    @Html.ActionLink("Checkout now","Checkout")
+</p>

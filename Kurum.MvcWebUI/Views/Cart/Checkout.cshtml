@@ -1,0 +1,11 @@
+﻿@model Kurum.Entities.ShippingDetail
+@{
+    ViewBag.Title = "Checkout";
+}
+
+<h2>Checkout</h2>
+@using (Html.BeginForm())
+{
+    @Html.EditorForModel()
+    <input type="submit" value="Complete" />
+}

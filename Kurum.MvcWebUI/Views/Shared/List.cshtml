@@ -1,0 +1,25 @@
+﻿@model System.Collections.Generic.List<Kurum.Entities.Category>
+
+<style>
+    .selected {
+        font: bold;
+        color: red;
+    }
+</style>
+<ul class="list-group">
+    <li class="list-group-item ">
+        @Html.RouteLink("Home", new { controller = "Product", Action = "Index", category = 0 }, new { @class = ViewBag.category == 0 ? "selected" : null })
+
+    </li>
+    @foreach (var category in Model)
+    {
+        <li class="list-group-item ">
+            @Html.RouteLink(category.CategoryName, new { controller = "Product", Action = "Index", category = category.CategoryId }, new { @class = category.CategoryId == ViewBag.category ? "selected" : null })
+
+        </li>
+    }
+</ul>
+
+
+
+

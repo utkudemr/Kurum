@@ -1,0 +1,37 @@
+﻿@model Kurum.MvcWebUI.Models.ProductViewModel
+
+<style>
+    .pager * {
+        padding-left: 5px;
+    }
+</style>
+<hr />
+<table class="table">
+    @foreach (var item in Model.Product)
+    {
+        <tr class="table-bordered">
+            <td class="col-md-6">
+                @item.ProductName
+            </td>
+            <td>
+                @item.UnitPrice
+            </td>
+            <td>
+                @item.CategoryId
+            </td>
+            <td class="col-md-3">
+                @using (Html.BeginForm("AddToCart", "Cart"))
+                {
+                    @Html.Hidden("productId", item.ProductID)
+                    <input type="submit" value="Add to Cart" class="btn" />
+                    
+                }
+            </td>
+        </tr>
+
+    }
+</table>
+<div class="pager">
+    @Html.Pager(Model.PaggingInfo)
+</div>
+
